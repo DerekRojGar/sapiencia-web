@@ -1,0 +1,107 @@
+[
+  {
+    "titulo": "Caminos del Saber",
+    "autor": "Ana Martínez",
+    "isbn": "978-607-123456-1",
+    "portada": "assets/img/portfolio/books-1.jpg",
+    "descripcion": "Una exploración interdisciplinaria sobre el conocimiento y la sociedad."
+  },
+  {
+    "titulo": "Innovación Educativa",
+    "autor": "Luis Gómez",
+    "isbn": "978-607-123456-2",
+    "portada": "assets/img/portfolio/app-1.jpg",
+    "descripcion": "Herramientas y estrategias para transformar la educación en el siglo XXI."
+  },
+  {
+    "titulo": "Pensamiento Crítico",
+    "autor": "María López",
+    "isbn": "978-607-123456-3",
+    "portada": "assets/img/portfolio/branding-1.jpg",
+    "descripcion": "Guía práctica para el desarrollo del pensamiento crítico en jóvenes."
+  },
+  {
+    "titulo": "Cultura y Ciencia",
+    "autor": "Jorge Ramírez",
+    "isbn": "978-607-123456-4",
+    "portada": "assets/img/portfolio/product-1.jpg",
+    "descripcion": "Relación entre la cultura y el avance científico en México."
+  },
+  {
+    "titulo": "Literatura Mexicana",
+    "autor": "Sofía Hernández",
+    "isbn": "978-607-123456-5",
+    "portada": "assets/img/masonry-portfolio/masonry-portfolio-1.jpg",
+    "descripcion": "Antología de autores contemporáneos mexicanos."
+  },
+  {
+    "titulo": "Divulgación Científica",
+    "autor": "Carlos Torres",
+    "isbn": "978-607-123456-6",
+    "portada": "assets/img/masonry-portfolio/masonry-portfolio-2.jpg",
+    "descripcion": "Cómo comunicar la ciencia de manera efectiva."
+  },
+  {
+    "titulo": "Humanismo y Sociedad",
+    "autor": "Patricia Ruiz",
+    "isbn": "978-607-123456-7",
+    "portada": "assets/img/masonry-portfolio/masonry-portfolio-3.jpg",
+    "descripcion": "Ensayos sobre el papel del humanismo en la transformación social."
+  },
+  {
+    "titulo": "Educación Inclusiva",
+    "autor": "Miguel Ángel Pérez",
+    "isbn": "978-607-123456-8",
+    "portada": "assets/img/masonry-portfolio/masonry-portfolio-4.jpg",
+    "descripcion": "Modelos y experiencias de inclusión educativa en Latinoamérica."
+  },
+  {
+    "titulo": "Ética Editorial",
+    "autor": "Laura Sánchez",
+    "isbn": "978-607-123456-9",
+    "portada": "assets/img/masonry-portfolio/masonry-portfolio-5.jpg",
+    "descripcion": "Principios y buenas prácticas en la edición de libros académicos."
+  },
+  {
+    "titulo": "Investigación Interdisciplinaria",
+    "autor": "Fernando Castro",
+    "isbn": "978-607-123456-10",
+    "portada": "assets/img/masonry-portfolio/masonry-portfolio-6.jpg",
+    "descripcion": "Metodologías para la investigación interdisciplinaria."
+  },
+  {
+    "titulo": "Arte y Conocimiento",
+    "autor": "Gabriela Flores",
+    "isbn": "978-607-123456-11",
+    "portada": "assets/img/masonry-portfolio/masonry-portfolio-7.jpg",
+    "descripcion": "El arte como medio de divulgación científica y cultural."
+  },
+  {
+    "titulo": "Sociedad Digital",
+    "autor": "Ricardo Medina",
+    "isbn": "978-607-123456-12",
+    "portada": "assets/img/masonry-portfolio/masonry-portfolio-8.jpg",
+    "descripcion": "Impacto de la tecnología en la educación y la cultura."
+  },
+  {
+    "titulo": "Ciencia y Género",
+    "autor": "Verónica Jiménez",
+    "isbn": "978-607-123456-13",
+    "portada": "assets/img/masonry-portfolio/masonry-portfolio-9.jpg",
+    "descripcion": "Perspectivas de género en la investigación científica."
+  },
+  {
+    "titulo": "Narrativas Contemporáneas",
+    "autor": "Héctor Salinas",
+    "isbn": "978-607-123456-14",
+    "portada": "assets/img/portfolio/books-1.jpg",
+    "descripcion": "Nuevas formas de narrar en la literatura actual."
+  },
+  {
+    "titulo": "Educación y Futuro",
+    "autor": "Isabel Vargas",
+    "isbn": "978-607-123456-15",
+    "portada": "assets/img/portfolio/app-1.jpg",
+    "descripcion": "Retos y oportunidades para la educación en el siglo XXI."
+  }
+]
