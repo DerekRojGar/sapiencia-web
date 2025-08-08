@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/sapiencia-logo.jpg" rel="icon">
-  <link href="assets/img/sapiencia-logo.jpg" rel="apple-touch-icon">
+  <link href="assets/img/sapiencia-logo-bg.png" rel="icon">
+  <link href="assets/img/sapiencia-logo-bg.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -82,15 +82,84 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/hero-bg.jpg" alt="Editorial Sapiencia" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center text-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Our Website</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
-        <div data-aos="fade-up" data-aos-delay="300">
-          <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
-        </div>
+      <h2 data-aos="fade-up" data-aos-delay="100">Editorial Sapiencia</h2>
+      <p class="lead" data-aos="fade-up" data-aos-delay="200">
+        Publicamos y difundimos obras académicas, científicas y literarias con rigor, ética y excelencia editorial.
+      </p>
+      <p class="text-white-50" data-aos="fade-up" data-aos-delay="250">
+        Dictaminación doble ciego • Comité Internacional • Acompañamiento integral al autor
+      </p>
+      <div class="d-flex gap-2 gap-md-3 flex-wrap justify-content-center" data-aos="fade-up" data-aos-delay="300">
+        <a href="#about" class="btn btn-lg btn-orange">Conócenos</a>
+        <a href="#catalogo" class="btn btn-lg btn-orange-outline">Ver catálogo</a>
+        <a href="#convocatoria" class="btn btn-lg btn-orange-outline">Postula tu obra</a>
       </div>
+      </div>
+
+      <style>
+      /* Botones naranja (consistente con la paleta del sitio) */
+      #hero {
+        --orange-600: #f0ab51;
+        --orange-400: #f3c07d;
+        --orange-300: #f7d5a8;
+      }
+      #hero .btn {
+        border-radius: 999px;
+        font-weight: 600;
+        letter-spacing: .4px;
+        padding: .85rem 1.4rem;
+        transition: transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+      }
+      #hero .btn-lg {
+        padding: .95rem 1.6rem;
+      }
+      #hero .btn-orange {
+        background: linear-gradient(90deg, var(--orange-600) 0%, var(--orange-400) 100%);
+        color: #fff;
+        border: none;
+        box-shadow: 0 6px 18px rgba(240, 171, 81, .25);
+      }
+      #hero .btn-orange:hover,
+      #hero .btn-orange:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 24px rgba(240, 171, 81, .32);
+        background: linear-gradient(90deg, var(--orange-400) 0%, var(--orange-600) 100%);
+      }
+      #hero .btn-orange:focus-visible {
+        outline: none;
+        box-shadow:
+        0 0 0 .25rem rgba(240,171,81,.25),
+        0 10px 24px rgba(240,171,81,.32);
+      }
+
+      #hero .btn-orange-outline {
+        background: rgba(240,171,81, .08);
+        color: var(--orange-300);
+        border: 2px solid var(--orange-400);
+        box-shadow: 0 4px 14px rgba(240,171,81,.12);
+      }
+      #hero .btn-orange-outline:hover,
+      #hero .btn-orange-outline:focus {
+        color: #fff;
+        border-color: transparent;
+        background: linear-gradient(90deg, var(--orange-600) 0%, var(--orange-400) 100%);
+        transform: translateY(-1px);
+        box-shadow: 0 10px 24px rgba(240,171,81,.28);
+      }
+      #hero .btn-orange-outline:focus-visible {
+        outline: none;
+        box-shadow:
+        0 0 0 .25rem rgba(240,171,81,.22),
+        0 10px 24px rgba(240,171,81,.28);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        #hero .btn { transition: none; }
+      }
+      </style>
 
     </section><!-- /Hero Section -->
 
@@ -134,9 +203,9 @@
       <div class="row gy-4 justify-content-center">
         <!-- Opción 1: Tarjetas con fondo suave y borde naranja claro -->
         <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
-        <div class="card shadow h-100 border-0" style="background: linear-gradient(135deg, #fff8f1 0%, #ffe5c2 100%); border-left: 6px solid #ffb066;">
+        <div class="card shadow h-100 border-0" style="background: linear-gradient(135deg, #fbead4 0%, #f7d5a8 100%); border-left: 6px solid #f3c07d;">
           <div class="card-body">
-          <h4 class="card-title" style="color: #e67c30;"><i class="bi bi-bullseye me-2"></i>Misión</h4>
+          <h4 class="card-title" style="color: #f0ab51;"><i class="bi bi-bullseye me-2"></i>Misión</h4>
           <p class="card-text">
             Contribuir al avance del conocimiento a través de la publicación, difusión y promoción de obras académicas, científicas y humanistas, acompañando a nuestros autores con un proceso editorial ético, riguroso y profesional.
           </p>
@@ -144,9 +213,9 @@
         </div>
         </div>
         <div class="col-lg-5" data-aos="fade-left" data-aos-delay="200">
-        <div class="card shadow h-100 border-0" style="background: linear-gradient(135deg, #fff8f1 0%, #ffe5c2 100%); border-left: 6px solid #ffb066;">
+        <div class="card shadow h-100 border-0" style="background: linear-gradient(135deg, #fbead4 0%, #f7d5a8 100%); border-left: 6px solid #f3c07d;">
           <div class="card-body">
-          <h4 class="card-title" style="color: #e67c30;"><i class="bi bi-eye me-2"></i>Visión</h4>
+          <h4 class="card-title" style="color: #f0ab51;"><i class="bi bi-eye me-2"></i>Visión</h4>
           <p class="card-text">
             Ser una editorial de referencia nacional e internacional reconocida por la calidad de sus publicaciones, su compromiso con la excelencia académica y su capacidad de generar impacto positivo en la sociedad mediante alianzas estratégicas.
           </p>
@@ -164,7 +233,7 @@
       /* Puedes ajustar el color principal aquí */
       .card-title.text-primary,
       .card-title.text-success {
-        color: #e67c30 !important;
+        color: #f0ab51 !important;
       }
       </style>
     </section>
@@ -181,27 +250,27 @@
       <!-- Primera fila: 3 valores centrados -->
       <div class="row gy-4 justify-content-center">
         <div class="col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="150">
-        <div class="card h-100 border-0 shadow-sm w-100" style="background: #fff8f1;">
+        <div class="card h-100 border-0 shadow-sm w-100" style="background: #fbead4;">
           <div class="card-body text-center">
-          <i class="bi bi-check2-circle" style="color: #e67c30; font-size: 2rem; margin-bottom: 0.5rem;"></i>
+          <i class="bi bi-check2-circle" style="color: #f0ab51; font-size: 2rem; margin-bottom: 0.5rem;"></i>
           <h5 class="card-title">Integridad</h5>
           <p class="card-text">Actuamos con transparencia y respeto por los derechos de autores y lectores.</p>
           </div>
         </div>
         </div>
         <div class="col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card h-100 border-0 shadow-sm w-100" style="background: #fff8f1;">
+        <div class="card h-100 border-0 shadow-sm w-100" style="background: #fbead4;">
           <div class="card-body text-center">
-          <i class="bi bi-check2-circle" style="color: #e67c30; font-size: 2rem; margin-bottom: 0.5rem;"></i>
+          <i class="bi bi-check2-circle" style="color: #f0ab51; font-size: 2rem; margin-bottom: 0.5rem;"></i>
           <h5 class="card-title">Compromiso</h5>
           <p class="card-text">Promovemos el conocimiento como herramienta para la transformación social.</p>
           </div>
         </div>
         </div>
         <div class="col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="250">
-        <div class="card h-100 border-0 shadow-sm w-100" style="background: #fff8f1;">
+        <div class="card h-100 border-0 shadow-sm w-100" style="background: #fbead4;">
           <div class="card-body text-center">
-          <i class="bi bi-check2-circle" style="color: #e67c30; font-size: 2rem; margin-bottom: 0.5rem;"></i>
+          <i class="bi bi-check2-circle" style="color: #f0ab51; font-size: 2rem; margin-bottom: 0.5rem;"></i>
           <h5 class="card-title">Honestidad</h5>
           <p class="card-text">Aplicamos la verdad y la coherencia en todas nuestras acciones y procesos.</p>
           </div>
@@ -211,18 +280,18 @@
       <!-- Segunda fila: 2 valores centrados debajo -->
       <div class="row gy-4 justify-content-center mt-2">
         <div class="col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
-          <div class="card h-100 border-0 shadow-sm w-100" style="background: #fff8f1;">
+          <div class="card h-100 border-0 shadow-sm w-100" style="background: #fbead4;">
         <div class="card-body text-center">
-          <i class="bi bi-check2-circle" style="color: #e67c30; font-size: 2rem; margin-bottom: 0.5rem;"></i>
+          <i class="bi bi-check2-circle" style="color: #f0ab51; font-size: 2rem; margin-bottom: 0.5rem;"></i>
           <h5 class="card-title">Responsabilidad</h5>
           <p class="card-text">Cumplimos con nuestros compromisos con rigor para asegurar la calidad.</p>
         </div>
           </div>
         </div>
         <div class="col-md-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="350">
-          <div class="card h-100 border-0 shadow-sm w-100" style="background: #fff8f1;">
+          <div class="card h-100 border-0 shadow-sm w-100" style="background: #fbead4;">
         <div class="card-body text-center">
-          <i class="bi bi-check2-circle" style="color: #e67c30; font-size: 2rem; margin-bottom: 0.5rem;"></i>
+          <i class="bi bi-check2-circle" style="color: #f0ab51; font-size: 2rem; margin-bottom: 0.5rem;"></i>
           <h5 class="card-title">Respeto</h5>
           <p class="card-text">Apreciamos la diversidad de ideas y perspectivas con dignidad y cordialidad.</p>
         </div>
@@ -238,7 +307,7 @@
       <div class="container">
       <div class="row justify-content-center mb-4">
       <div class="col-lg-8 text-center" data-aos="fade-up">
-      <h3 class="mb-4 text-primary">
+      <h3 class="mb-4" style="color: #f0ab51;">
         <i class="bi bi-megaphone-fill me-2"></i>Convocatoria
       </h3>
       <p class="lead" style="text-align: justify;">
@@ -248,23 +317,23 @@
       </div>
       <div class="row justify-content-center">
       <div class="col-lg-10">
-        <div class="card shadow-lg border-0 rounded-4" data-aos="fade-up" data-aos-delay="100" style="background: linear-gradient(135deg, #fff7e6 0%, #ffe0b2 100%);">
+        <div class="card shadow-lg border-0 rounded-4" data-aos="fade-up" data-aos-delay="100" style="background: linear-gradient(135deg, #fbead4 0%, #f7d5a8 100%);">
       <div class="card-body p-5">
         <ul class="list-unstyled mb-4" style="text-align: justify; font-size: 1.15rem;">
         <li class="mb-4" data-aos="fade-right" data-aos-delay="150">
-        <strong style="color: #e67c30;"><i class="bi bi-shield-check me-2"></i>Dictaminación doble ciego:</strong>
+        <strong style="color: #f0ab51;"><i class="bi bi-shield-check me-2"></i>Dictaminación doble ciego:</strong>
         Nuestro servicio editorial incluye un proceso riguroso en el que expertos académicos especializados en el área temática evalúan la calidad, pertinencia y originalidad de cada obra, garantizando imparcialidad y altos estándares académicos.
         </li>
         <li class="mb-4" data-aos="fade-left" data-aos-delay="200">
-        <strong style="color: #e67c30;"><i class="bi bi-globe2 me-2"></i>Supervisión internacional:</strong>
+        <strong style="color: #f0ab51;"><i class="bi bi-globe2 me-2"></i>Supervisión internacional:</strong>
         Todo el proceso de publicación está supervisado por un Comité Internacional, integrado por especialistas reconocidos, que vela por la integridad, ética y excelencia de nuestras publicaciones.
         </li>
         </ul>
-        <div class="alert alert-warning text-center shadow-sm border-0" role="alert" data-aos="zoom-in" data-aos-delay="250" style="background: linear-gradient(90deg, #e67c30 60%, #ffb066 100%); color: #fff; font-size: 1.1rem;">
+        <div class="alert alert-warning text-center shadow-sm border-0" role="alert" data-aos="zoom-in" data-aos-delay="250" style="background: linear-gradient(90deg, #f0ab51 60%, #f3c07d 100%); color: #fff; font-size: 1.1rem;">
         Te invitamos a formar parte de nuestra comunidad de autores y a contribuir al avance del conocimiento a través de Editorial Sapiencia. <strong>¡Ponte en contacto con nosotros!</strong>
         </div>
         <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="300">
-        <a href="#ref" class="btn btn-lg btn-orange pulse-btn" style="background: linear-gradient(90deg, #e67c30 60%, #ffb066 100%); color: #fff; border: none; border-radius: 2rem; box-shadow: 0 4px 16px rgba(230,124,48,0.15); font-weight: 600; letter-spacing: 1px; transition: transform 0.2s, box-shadow 0.2s;">
+        <a href="#ref" class="btn btn-lg btn-orange pulse-btn" style="background: linear-gradient(90deg, #f0ab51 60%, #f3c07d 100%); color: #fff; border: none; border-radius: 2rem; box-shadow: 0 4px 16px rgba(240,171,81,0.15); font-weight: 600; letter-spacing: 1px; transition: transform 0.2s, box-shadow 0.2s;">
         <i class="bi bi-send me-2"></i>Postula tu obra
         </a>
         </div>
@@ -281,14 +350,14 @@
         animation: pulse 1.2s infinite;
       }
       @keyframes pulse {
-        0% { box-shadow: 0 0 0 0 rgba(230,124,48,0.5); }
-        70% { box-shadow: 0 0 0 12px rgba(230,124,48,0); }
-        100% { box-shadow: 0 0 0 0 rgba(230,124,48,0); }
+        0% { box-shadow: 0 0 0 0 rgba(240,171,81,0.5); }
+        70% { box-shadow: 0 0 0 12px rgba(240,171,81,0); }
+        100% { box-shadow: 0 0 0 0 rgba(240,171,81,0); }
       }
       .btn-orange:hover, .btn-orange:focus {
         transform: scale(1.07);
-        box-shadow: 0 8px 24px rgba(230,124,48,0.25);
-        background: linear-gradient(90deg, #ffb066 60%, #e67c30 100%);
+        box-shadow: 0 8px 24px rgba(240,171,81,0.25);
+        background: linear-gradient(90deg, #f3c07d 60%, #f0ab51 100%);
       }
       </style>
       </div>
@@ -297,14 +366,18 @@
 
     <!-- Catálogo Section -->
     <section id="catalogo" class="catalogo section" style="padding: 0;">
-      <div class="container-fluid section-title" data-aos="fade-up" style="max-width: 100vw;">
-      <h2>Catálogo</h2>
-      <p>
-        En Editorial Sapiencia nos enorgullece presentar nuestro catálogo de publicaciones, resultado de nuestra misión. Cada obra es el reflejo del trabajo conjunto entre autores y nuestro equipo editorial y está respaldada por un proceso de dictaminación especializado.
-      </p>
-      <p class="text-muted" style="font-size: 1rem;">
-        <em>(Las fichas se conforman de: título, portada, autor(es), ISBN.)</em>
-      </p>
+      <div class="container section-title" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+        <h2>Catálogo</h2>
+        <p>
+          En Editorial Sapiencia nos enorgullece presentar nuestro catálogo de publicaciones, resultado de nuestra misión. Cada obra es el reflejo del trabajo conjunto entre autores y nuestro equipo editorial y está respaldada por un proceso de dictaminación especializado.
+        </p>
+        <p class="text-muted" style="font-size: 1rem;">
+          <em>(Las fichas se conforman de: título, portada, autor(es), ISBN.)</em>
+        </p>
+        </div>
+      </div>
       </div>
       <div class="container-fluid px-0" style="max-width: 100vw;">
       <div id="catalogoSwiper" class="swiper">
@@ -332,9 +405,9 @@
         width: 100%;
       }
       #catalogo .libro-card {
-        background: #fff8f1;
+        background: #fbead4;
         border-radius: 1.5rem;
-        box-shadow: 0 4px 24px rgba(230,124,48,0.12);
+        box-shadow: 0 4px 24px rgba(240,171,81,0.12);
         padding: 1.5rem;
         width: 100%;
         max-width: 420px;
@@ -350,15 +423,15 @@
         width: 120px;
         object-fit: cover;
         border-radius: 1rem;
-        box-shadow: 0 4px 24px rgba(230,124,48,0.12);
+        box-shadow: 0 4px 24px rgba(240,171,81,0.12);
         transition: transform 0.3s;
       }
       #catalogo .libro-card img:hover {
         transform: scale(1.04) rotate(-2deg);
-        box-shadow: 0 8px 32px rgba(230,124,48,0.18);
+        box-shadow: 0 8px 32px rgba(240,171,81,0.18);
       }
       #catalogo .libro-info h4 {
-        color: #e67c30;
+        color: #f0ab51;
         font-weight: 600;
         letter-spacing: 1px;
         margin-bottom: 0.5rem;
@@ -369,17 +442,17 @@
         height: 40px !important;
         background: rgba(255, 255, 255, 0.9) !important;
         border-radius: 50% !important;
-        box-shadow: 0 4px 12px rgba(230, 124, 48, 0.15) !important;
+        box-shadow: 0 4px 12px rgba(240, 171, 81, 0.15) !important;
         transition: all 0.3s ease !important;
       }
       .custom-nav-btn::after {
         font-size: 18px !important;
-        color: #e67c30 !important;
+        color: #f0ab51 !important;
         font-weight: bold !important;
       }
       .custom-nav-btn:hover {
-        background: #e67c30 !important;
-        box-shadow: 0 6px 16px rgba(230, 124, 48, 0.25) !important;
+        background: #f0ab51 !important;
+        box-shadow: 0 6px 16px rgba(240, 171, 81, 0.25) !important;
         transform: scale(1.1) !important;
       }
       .custom-nav-btn:hover::after {
