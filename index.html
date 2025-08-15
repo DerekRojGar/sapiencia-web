@@ -44,10 +44,9 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">Identidad</a></li>
+          <li><a href="#catalogo">Catalogos</a></li>
           <li><a href="#services">Servicios</a></li>
-          <li><a href="#portfolio">Portafolio</a></li>
-          <li><a href="#pricing">Precios</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#alianzas">Alianzas</a></li>
             <!--
             <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -367,117 +366,111 @@
     <!-- Catálogo Section -->
     <section id="catalogo" class="catalogo section" style="padding: 0;">
       <div class="container section-title" data-aos="fade-up">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-        <h2>Catálogo</h2>
-        <p>
-          En Editorial Sapiencia nos enorgullece presentar nuestro catálogo de publicaciones, resultado de nuestra misión. Cada obra es el reflejo del trabajo conjunto entre autores y nuestro equipo editorial y está respaldada por un proceso de dictaminación especializado.
-        </p>
-        <p class="text-muted" style="font-size: 1rem;">
-          <em>(Las fichas se conforman de: título, portada, autor(es), ISBN.)</em>
-        </p>
-        </div>
+      <h2>Catálogo</h2>
+      <p style="text-align: justify;">
+       En Editorial Sapiencia nos enorgullece presentar nuestro catálogo de publicaciones, resultado de nuestra misión. Cada obra es el reflejo del trabajo conjunto entre autores y nuestro equipo editorial y está respaldada por un proceso de dictaminación especializado.
+      </p>
       </div>
       </div>
       <div class="container-fluid px-0" style="max-width: 100vw;">
       <div id="catalogoSwiper" class="swiper">
-        <div class="swiper-wrapper" id="catalogo-swiper-wrapper">
-        <!-- Libros se insertan aquí dinámicamente -->
-        </div>
-        <!-- Controles modernizados -->
-        <div class="swiper-button-prev custom-nav-btn"></div>
-        <div class="swiper-button-next custom-nav-btn"></div>
-        <div class="swiper-pagination"></div>
+      <div class="swiper-wrapper" id="catalogo-swiper-wrapper">
+      <!-- Libros se insertan aquí dinámicamente -->
+      </div>
+      <!-- Controles modernizados -->
+      <div class="swiper-button-prev custom-nav-btn"></div>
+      <div class="swiper-button-next custom-nav-btn"></div>
+      <div class="swiper-pagination"></div>
       </div>
       </div>
       <style>
       #catalogo .swiper {
-        width: 100vw;
-        padding: 2rem 0 3rem 0;
+      width: 100vw;
+      padding: 2rem 0 3rem 0;
       }
       #catalogo .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: none;
-        min-height: 380px;
-        max-width: 420px;
-        width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      min-height: 380px;
+      max-width: 420px;
+      width: 100%;
       }
       #catalogo .libro-card {
-        background: #fbead4;
-        border-radius: 1.5rem;
-        box-shadow: 0 4px 24px rgba(240,171,81,0.12);
-        padding: 1.5rem;
-        width: 100%;
-        max-width: 420px;
-        min-width: 320px;
-        min-height: 320px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 1.5rem;
+      background: #fbead4;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 24px rgba(240,171,81,0.12);
+      padding: 1.5rem;
+      width: 100%;
+      max-width: 420px;
+      min-width: 320px;
+      min-height: 320px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1.5rem;
       }
       #catalogo .libro-card img {
-        max-height: 180px;
-        width: 120px;
-        object-fit: cover;
-        border-radius: 1rem;
-        box-shadow: 0 4px 24px rgba(240,171,81,0.12);
-        transition: transform 0.3s;
+      max-height: 180px;
+      width: 120px;
+      object-fit: cover;
+      border-radius: 1rem;
+      box-shadow: 0 4px 24px rgba(240,171,81,0.12);
+      transition: transform 0.3s;
       }
       #catalogo .libro-card img:hover {
-        transform: scale(1.04) rotate(-2deg);
-        box-shadow: 0 8px 32px rgba(240,171,81,0.18);
+      transform: scale(1.04) rotate(-2deg);
+      box-shadow: 0 8px 32px rgba(240,171,81,0.18);
       }
       #catalogo .libro-info h4 {
-        color: #f0ab51;
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin-bottom: 0.5rem;
+      color: #f0ab51;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
       }
       /* Estilos modernos para los botones de navegación */
       .custom-nav-btn {
-        width: 40px !important;
-        height: 40px !important;
-        background: rgba(255, 255, 255, 0.9) !important;
-        border-radius: 50% !important;
-        box-shadow: 0 4px 12px rgba(240, 171, 81, 0.15) !important;
-        transition: all 0.3s ease !important;
+      width: 40px !important;
+      height: 40px !important;
+      background: rgba(255, 255, 255, 0.9) !important;
+      border-radius: 50% !important;
+      box-shadow: 0 4px 12px rgba(240, 171, 81, 0.15) !important;
+      transition: all 0.3s ease !important;
       }
       .custom-nav-btn::after {
-        font-size: 18px !important;
-        color: #f0ab51 !important;
-        font-weight: bold !important;
+      font-size: 18px !important;
+      color: #f0ab51 !important;
+      font-weight: bold !important;
       }
       .custom-nav-btn:hover {
-        background: #f0ab51 !important;
-        box-shadow: 0 6px 16px rgba(240, 171, 81, 0.25) !important;
-        transform: scale(1.1) !important;
+      background: #f0ab51 !important;
+      box-shadow: 0 6px 16px rgba(240, 171, 81, 0.25) !important;
+      transform: scale(1.1) !important;
       }
       .custom-nav-btn:hover::after {
-        color: white !important;
+      color: white !important;
       }
       @media (max-width: 768px) {
-        #catalogo .libro-card {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-        min-width: 220px;
-        min-height: 220px;
-        }
-        #catalogo .libro-card img {
-        max-width: 60vw;
-        max-height: 120px;
-        width: auto;
-        }
-        .custom-nav-btn {
-        width: 36px !important;
-        height: 36px !important;
-        }
-        .custom-nav-btn::after {
-        font-size: 16px !important;
-        }
+      #catalogo .libro-card {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+      min-width: 220px;
+      min-height: 220px;
+      }
+      #catalogo .libro-card img {
+      max-width: 60vw;
+      max-height: 120px;
+      width: auto;
+      }
+      .custom-nav-btn {
+      width: 36px !important;
+      height: 36px !important;
+      }
+      .custom-nav-btn::after {
+      font-size: 16px !important;
+      }
       }
       </style>
     </section>
@@ -687,74 +680,44 @@
     </section><!-- /Services Section -->
 
     <!-- Call To Action Section -->
+    <!--
     <section id="call-to-action" class="call-to-action section dark-background">
 
       <img src="assets/img/cta-bg.jpg" alt="">
 
       <div class="container">
 
-        <div class="row" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-9 text-center text-xl-start">
-            <h3>Call To Action</h3>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-xl-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
+      <div class="row" data-aos="zoom-in" data-aos-delay="100">
+        <div class="col-xl-9 text-center text-xl-start">
+        <h3>Call To Action</h3>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
+        <div class="col-xl-3 cta-btn-container text-center">
+        <a class="cta-btn align-middle" href="#">Call To Action</a>
+        </div>
+      </div>
 
       </div>
 
-    </section><!-- /Call To Action Section -->
+    </section>
+    -->
+    <!-- /Call To Action Section -->
+    
 
     <!-- Features Section -->
-    <section id="features" class="features section">
+    <section id="alianzas" class="features section">
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="features-image col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/features-bg.jpg" alt=""></div>
-
-          <div class="col-lg-6 order-lg-1">
-
-            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-archive flex-shrink-0"></i>
-              <div>
-                <h4>Est labore ad</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-basket flex-shrink-0"></i>
-              <div>
-                <h4>Harum esse qui</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-broadcast flex-shrink-0"></i>
-              <div>
-                <h4>Aut occaecati</h4>
-                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-camera-reels flex-shrink-0"></i>
-              <div>
-                <h4>Beatae veritatis</h4>
-                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-              </div>
-            </div><!-- End Features Item-->
-
-          </div>
-
-        </div>
-
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+      <h2>Alianzas</h2>
+      <p style="text-align: justify;">
+        En Editorial Sapiencia creemos en la fuerza de la colaboración. Por ello, hemos establecido acuerdos estratégicos con universidades e instituciones educativas de prestigio, con el objetivo de fomentar la investigación, promover la publicación académica, apoyar la difusión del conocimiento y fortalecer el perfil profesional de los autores.
+      </p>
+      <p style="text-align: justify;">
+        Estas alianzas nos permiten extender nuestra misión y enriquecer la comunidad académica con nuevas perspectivas.
+      </p>
       </div>
+      <!-- End Section Title -->
 
     </section><!-- /Features Section -->
 
@@ -851,351 +814,6 @@
 
     </section><!-- /Stats Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
-            <li data-filter=".filter-branding">Web</li>
-          </ul><!-- End Portfolio Filters -->
-
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Portfolio Section -->
-
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Pricing</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="pricing-item">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="pricing-item recommended">
-              <span class="recommended-badge">Recommended</span>
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="pricing-item">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div><!-- End Pricing Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Pricing Section -->
-
-    <!-- Faq Section -->
-    <section id="faq" class="faq section">
-
-      <div class="container-fluid">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-
-            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-            </div>
-
-            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-
-              <div class="faq-item faq-active">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
-                <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-              <div class="faq-item">
-                <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
-                <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
-                </div>
-                <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 order-1 order-lg-2">
-            <img src="assets/img/faq.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Faq Section -->
-
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Blog Posts</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Entertainment</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Mark Dower</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-        </div><!-- End recent posts list -->
-
-      </div>
-
-    </section><!-- /Recent Posts Section -->
 
     <!-- Contact Section -->
     <section id="contact" class="contact section light-background">
