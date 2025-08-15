@@ -71,7 +71,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="#about">Get Started</a>
+  
 
     </div>
   </header>
@@ -815,111 +815,338 @@
     </section><!-- /Stats Section -->
 
 
-    <!-- Contact Section -->
+    <!-- Contact Section (modernized with animations & UX improvements) -->
     <section id="contact" class="contact section light-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o te interesa publicar con nosotros? Contáctanos por WhatsApp o utiliza el formulario. Respuesta rápida y personalizada.</p>
+      </div>
 
-      <div class="container" data-aos="fade" data-aos-delay="100">
+      <div class="container contact-modern" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center">
 
-        <div class="row gy-4">
+          <!-- Left column: info + CTA -->
+          <div class="col-lg-5">
+            <div class="card shadow-lg border-0 rounded-4 p-4 mb-4" style="background:linear-gradient(135deg,#fffaf6 0%,#fbead4 100%);">
+              <h3 class="mb-2" style="color:#f07f2e;">¿Tienes preguntas?</h3>
+              <p class="mb-3 text-muted">Nuestro agente virtual en WhatsApp está listo para ayudarte con dudas sobre publicación, requisitos y procesos editoriales.</p>
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+              <a class="btn btn-lg w-100 d-flex align-items-center justify-content-center whatsapp-cta mb-3" href="https://wa.me/5212345678900?text=Hola%20Editorial%20Sapiencia%2C%20tengo%20una%20consulta" target="_blank" rel="noopener noreferrer" aria-label="Abrir chat en WhatsApp">
+                <i class="bi bi-whatsapp me-2" aria-hidden="true" style="font-size:1.25rem;"></i>
+                Chatea por WhatsApp
+              </a>
+
+              <div class="info-list mt-2">
+                <div class="info-item d-flex align-items-start mb-3" data-aos="fade-right" data-aos-delay="150">
+                  <i class="bi bi-geo-alt-fill text-warning me-3 fs-4"></i>
+                  <div>
+                    <h5 class="mb-1" style="font-size:1rem;">Dirección</h5>
+                    <p class="mb-0 text-muted">A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                </div>
+
+                <div class="info-item d-flex align-items-start mb-3" data-aos="fade-right" data-aos-delay="200">
+                  <i class="bi bi-telephone-fill text-warning me-3 fs-4"></i>
+                  <div>
+                    <h5 class="mb-1" style="font-size:1rem;">Teléfono</h5>
+                    <p class="mb-0 text-muted">+1 5589 55488 55</p>
+                  </div>
+                </div>
+
+                <div class="info-item d-flex align-items-start" data-aos="fade-right" data-aos-delay="250">
+                  <i class="bi bi-envelope-fill text-warning me-3 fs-4"></i>
+                  <div>
+                    <h5 class="mb-1" style="font-size:1rem;">Correo</h5>
+                    <p class="mb-0 text-muted">info@example.com</p>
+                  </div>
+                </div>
               </div>
-            </div><!-- End Info Item -->
+            </div>
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
+            <!-- Floating WhatsApp FAB for small screens -->
+            <a href="https://wa.me/5212345678900?text=Hola%20Editorial%20Sapiencia%2C%20tengo%20una%20consulta" target="_blank" rel="noopener noreferrer" class="whatsapp-fab d-inline-flex d-lg-none align-items-center justify-content-center" aria-label="Abrir chat en WhatsApp (móvil)">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            </a>
           </div>
 
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+          <!-- Right column: modern form -->
+          <div class="col-lg-7">
+            <form id="contactForm" class="contact-form card shadow-sm border-0 p-4 rounded-4" action="forms/contact.php" method="post" novalidate data-aos="fade-left" data-aos-delay="150" aria-label="Formulario de contacto">
+              <div class="row g-3">
 
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                <div class="col-md-6 form-floating">
+                  <input type="text" class="form-control" id="cf-name" name="name" placeholder="Nombre" required>
+                  <label for="cf-name">Nombre</label>
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <div class="col-md-6 form-floating">
+                  <input type="email" class="form-control" id="cf-email" name="email" placeholder="Correo" required>
+                  <label for="cf-email">Correo</label>
                 </div>
 
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                <div class="col-12 form-floating">
+                  <input type="text" class="form-control" id="cf-subject" name="subject" placeholder="Asunto" required>
+                  <label for="cf-subject">Asunto</label>
                 </div>
 
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                <div class="col-12 form-floating">
+                  <textarea class="form-control" placeholder="Mensaje" id="cf-message" name="message" style="height:140px" required></textarea>
+                  <label for="cf-message">Mensaje</label>
                 </div>
 
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                <div class="col-12 d-flex align-items-center gap-3">
+                  <button type="submit" class="btn btn-warning btn-lg px-4" id="cf-submit">
+                    <i class="bi bi-send me-2"></i> Enviar mensaje
+                  </button>
+                  <div class="form-status flex-grow-1">
+                    <div class="loading visually-hidden">Enviando…</div>
+                    <div class="error-message text-danger visually-hidden"></div>
+                    <div class="sent-message text-success visually-hidden">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                  </div>
                 </div>
 
               </div>
             </form>
-          </div><!-- End Contact Form -->
+          </div>
 
         </div>
-
       </div>
 
-    </section><!-- /Contact Section -->
+      <style>
+        /* Contact modern styles */
+        .contact-modern .whatsapp-cta {
+          background: linear-gradient(90deg,#25d366 0%,#16a34a 100%);
+          color: #fff;
+          font-weight:600;
+          border-radius: 12px;
+          box-shadow: 0 8px 28px rgba(37,211,102,0.17);
+          transition: transform .18s, box-shadow .18s;
+        }
+        .contact-modern .whatsapp-cta:hover { transform: translateY(-3px); box-shadow: 0 14px 36px rgba(37,211,102,0.22); color:#fff; }
+
+        .contact-form .form-control {
+          border: 1px solid rgba(0,0,0,0.06);
+          background: #fff;
+          transition: box-shadow .12s, border-color .12s, transform .12s;
+          padding: 1rem .75rem;
+          border-radius: .5rem;
+          height: auto;
+        }
+        .form-floating > label { padding: .5rem .75rem; transform-origin: left top; }
+        .contact-form .form-control:focus {
+          box-shadow: 0 8px 28px rgba(240,171,81,0.08);
+          border-color: rgba(240,171,81,0.6);
+          outline: none;
+          transform: translateY(-1px);
+        }
+
+        .contact-form .btn-warning {
+          background: linear-gradient(90deg,#f0ab51 0%,#f3c07d 100%);
+          border: none;
+          color: #fff;
+          box-shadow: 0 8px 28px rgba(240,171,81,0.12);
+          border-radius: .7rem;
+        }
+
+        .contact-form .loading { font-style: italic; }
+        .contact-form .visually-hidden { display:none; }
+
+        /* WhatsApp FAB */
+        .whatsapp-fab {
+          position: fixed;
+          right: 1rem;
+          bottom: 1rem;
+          z-index: 9999;
+          width: 56px;
+          height: 56px;
+          border-radius: 50%;
+          background: linear-gradient(180deg,#25d366,#128c5e);
+          color: #fff;
+          box-shadow: 0 10px 30px rgba(18,140,94,0.2);
+          font-size: 1.4rem;
+          align-items:center;
+          justify-content:center;
+          animation: pulse-fab 2.4s infinite;
+        }
+        @keyframes pulse-fab {
+          0%{ box-shadow: 0 10px 30px rgba(18,140,94,0.22); transform: translateY(0) scale(1); }
+          50%{ box-shadow: 0 20px 40px rgba(18,140,94,0.12); transform: translateY(-3px) scale(1.05); }
+          100%{ box-shadow: 0 10px 30px rgba(18,140,94,0.22); transform: translateY(0) scale(1); }
+        }
+
+        /* Responsive tweaks */
+        @media(min-width:992px){
+          .contact-modern .whatsapp-cta{ width:auto; max-width:100%; }
+          .whatsapp-fab{ display:none; }
+        }
+      </style>
+
+      <script>
+        (function(){
+          const form = document.getElementById('contactForm');
+          const loadingEl = form.querySelector('.loading');
+          const successEl = form.querySelector('.sent-message');
+          const errorEl = form.querySelector('.error-message');
+          const submitBtn = form.querySelector('#cf-submit');
+
+          form.addEventListener('submit', function(e){
+            e.preventDefault();
+            // simple client-side validation
+            if (!form.checkValidity()) {
+              form.reportValidity();
+              return;
+            }
+
+            loadingEl.classList.remove('visually-hidden');
+            errorEl.classList.add('visually-hidden');
+            successEl.classList.add('visually-hidden');
+            submitBtn.setAttribute('disabled','');
+
+            const formData = new FormData(form);
+            const action = form.getAttribute('action') || '';
+
+            // Try submitting to backend if present, otherwise simulate
+            if (action) {
+              fetch(action, {
+                method: 'POST',
+                body: formData,
+              }).then(resp => {
+                if (!resp.ok) throw new Error('Error en el servidor');
+                return resp.text();
+              }).then(() => {
+                successEl.classList.remove('visually-hidden');
+                form.reset();
+              }).catch(err => {
+                console.warn(err);
+                errorEl.textContent = 'No se pudo enviar. Intenta de nuevo o usa WhatsApp.';
+                errorEl.classList.remove('visually-hidden');
+              }).finally(() => {
+                loadingEl.classList.add('visually-hidden');
+                submitBtn.removeAttribute('disabled');
+              });
+            } else {
+              // Simulate network delay for UX
+              setTimeout(() => {
+                loadingEl.classList.add('visually-hidden');
+                successEl.classList.remove('visually-hidden');
+                form.reset();
+                submitBtn.removeAttribute('disabled');
+              }, 900);
+            }
+          });
+        })();
+      </script>
+    </section>
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer dark-background" role="contentinfo" aria-label="Pie de página">
     <div class="container">
-      <h3 class="sitename">KnightOne</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">KnightOne</strong> <span>All Rights Reserved</span>
+      <div class="footer-top text-center py-5">
+        <a href="index.html" class="logo d-flex align-items-center justify-content-center mb-3" aria-label="Ir al inicio">
+          <h3 class="sitename mb-0">Editorial Sapiencia</h3>
+        </a>
+
+        <p class="footer-desc mx-auto mb-3" style="max-width:720px;">
+          Publicamos y difundimos obras académicas, científicas y literarias con rigor, ética y excelencia editorial. 
+          Acompañamos a autores en todo el proceso: evaluación doble ciego, acompañamiento editorial y difusión internacional.
+        </p>
+
+        <div class="social-links d-flex justify-content-center gap-2 mb-3" aria-label="Redes sociales">
+          <a href="#" class="social-btn" aria-label="Twitter" rel="noopener noreferrer"><i class="bi bi-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="social-btn" aria-label="Facebook" rel="noopener noreferrer"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="social-btn" aria-label="Instagram" rel="noopener noreferrer"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="social-btn" aria-label="LinkedIn" rel="noopener noreferrer"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+          <a href="mailto:info@example.com" class="social-btn" aria-label="Correo" rel="noopener noreferrer"><i class="bi bi-envelope-fill" aria-hidden="true"></i></a>
         </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center pt-3 mt-3 border-top gap-2">
+        <div class="copyright text-muted small">
+          &copy; <span id="footer-year"></span> <strong class="sitename">Editorial Sapiencia</strong>. Todos los derechos reservados.
+        </div>
+
+        <div class="footer-links d-flex gap-3 align-items-center">
+          <a href="#contact" class="link-small" aria-label="Contacto">Contacto</a>
+          <a href="#" class="link-small" aria-label="Términos y condiciones">Términos</a>
+          <a href="#" class="link-small" aria-label="Aviso de privacidad">Aviso de privacidad</a>
         </div>
       </div>
     </div>
+
+    <style>
+      /* Paleta local del footer (respeta colores naranja del sitio) */
+      #footer { --orange-600: #f0ab51; --orange-400: #f3c07d; --muted-white: rgba(255,255,255,0.92); background: linear-gradient(180deg,#071022 0%, #0b1622 100%); color: rgba(255,255,255,0.85); }
+
+      /* Descripción más legible y con contraste */
+      #footer .footer-desc {
+        color: var(--muted-white);
+        font-size: 1rem;
+        line-height: 1.5;
+        background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+        padding: .9rem 1.1rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(2,6,23,0.55);
+        margin-bottom: 1rem;
+        font-weight: 500;
+        text-align: center;
+      }
+
+      /* Social buttons styled to match paleta */
+      .social-btn {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(240,171,81,0.12);
+        color: var(--orange-400);
+        transition: transform .14s ease, box-shadow .14s ease, background .14s ease, color .14s ease;
+        text-decoration: none;
+        font-size: 1.05rem;
+      }
+      .social-btn:hover, .social-btn:focus {
+        background: linear-gradient(90deg, var(--orange-600), var(--orange-400));
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 10px 26px rgba(240,171,81,0.22);
+        outline: none;
+      }
+
+      /* Footer links */
+      .footer-links .link-small {
+        color: rgba(255,255,255,0.78);
+        text-decoration: none;
+        font-size: .9rem;
+        padding: .25rem .4rem;
+        border-radius: .35rem;
+        transition: color .12s, background .12s, transform .12s;
+      }
+      .footer-links .link-small:hover, .footer-links .link-small:focus {
+        color: #fff;
+        background: rgba(240,171,81,0.06);
+        transform: translateY(-2px);
+        text-decoration: none;
+      }
+
+      /* Responsive spacing */
+      @media (max-width: 576px) {
+        #footer .footer-desc { font-size: .98rem; padding: .75rem .9rem; }
+        .social-btn { width: 40px; height: 40px; font-size: 1rem; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .social-btn, .footer-links .link-small { transition: none !important; }
+      }
+    </style>
   </footer>
+
+  <script>
+    // Actualiza el año del footer automáticamente
+    (function(){ const el = document.getElementById('footer-year'); if(el) el.textContent = new Date().getFullYear(); })();
+  </script>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
