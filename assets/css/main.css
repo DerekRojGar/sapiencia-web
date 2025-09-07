@@ -214,8 +214,8 @@ h6 {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
+  border: 3px solid var(--brand-violet);
+  border-top-color: var(--brand-orange);
   animation: php-email-form-loading 1s linear infinite;
 }
 
@@ -1061,8 +1061,8 @@ section,
 }
 
 .features .features-item i {
+  color: var(--brand-violet);
   font-size: 48px;
-  color: var(--accent-color);
   margin-right: 20px;
   line-height: 0;
 }
@@ -1071,6 +1071,10 @@ section,
   font-size: 15px;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin: 0;
+}
+
+.features .features-item:hover i {
+  color: var(--brand-orange);
 }
 
 /*--------------------------------------------------------------
@@ -1232,6 +1236,7 @@ section,
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
+  color: var(--brand-purple);
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
@@ -1353,12 +1358,12 @@ section,
 }
 
 .pricing .recommended .btn-buy {
-  background: var(--accent-color);
+  background: linear-gradient(135deg, var(--brand-violet) 0%, var(--brand-purple) 100%);
   color: var(--contrast-color);
 }
 
 .pricing .recommended .btn-buy:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  background: linear-gradient(135deg, var(--brand-orange) 0%, var(--brand-violet) 100%);
   border-color: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
@@ -2447,3 +2452,32 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+/* Palette interleaving tweaks (non-structural) */
+
+/* Features: iconos en violeta y hover a naranja */
+.features .features-item i { color: var(--brand-violet); }
+.features .features-item:hover i { color: var(--brand-orange); }
+
+/* About: bullets en violeta -> naranja en hover */
+.about ul i { color: var(--brand-violet); }
+.about ul li:hover i { color: var(--brand-orange); }
+
+/* Pricing: estado recomendado también con degradado de marca */
+.pricing .recommended .btn-buy {
+  background: linear-gradient(135deg, var(--brand-violet) 0%, var(--brand-purple) 100%);
+  color: var(--contrast-color);
+}
+.pricing .recommended .btn-buy:hover {
+  background: linear-gradient(135deg, var(--brand-orange) 0%, var(--brand-violet) 100%);
+}
+
+/* PHP email form: spinner pequeño bicolor */
+.php-email-form .loading:before {
+  border: 3px solid var(--brand-violet);
+  border-top-color: var(--brand-orange);
+}
+
+/* Portfolio: títulos e interacción más marcada */
+.portfolio .portfolio-item .portfolio-info h4 { color: var(--brand-purple); }
+.portfolio .portfolio-item:hover .portfolio-info h4 { color: var(--brand-orange); }
